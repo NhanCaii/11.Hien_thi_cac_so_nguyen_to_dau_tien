@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let number= +prompt("khai báo số lượng số nguyên tố cần in ra");
+    let count=0;
+    let N=2;
+
+    while(count<number) {
+    let check=true;    
+        for (i=2;i<=(N-1);i++){
+            if (N%i==0){
+                check=false;     
+            }       
+        }
+        if (check==true) {
+                document.write(N+"<br>");
+                count++;
+            }
+        N++;
+        
+    }
+
+
+    // let snt=0;
+    // while(count<number) {   
+    //     for (i=1;i<=N;i++){
+    //         if (N%i==0){
+    //             snt+=1;
+                
+    //         }
+            
+    //     }
+    //     if (snt==2) {
+    //         document.write(N+"<br>");
+    //         count++;
+    //     }
+    //     snt=0;
+    //     N++;
+        
+    // }
+</script>
+</body>
+</html>
